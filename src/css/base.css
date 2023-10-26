@@ -1,0 +1,34 @@
+:root {
+  --bg-color: #283946;
+  --skeletonBgColor: #415f76;
+  --text-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  box-sizing: border-box;
+  color: var(--text-color);
+  font: 1em/1.5 system-ui;
+  -webkit-font-smoothing: antialiased;
+  max-width: 40em;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 1em;
+}
+
+svg {
+  fill: currentColor;
+}
+.VisuallyHidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}

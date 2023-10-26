@@ -1,0 +1,66 @@
+.TodaysWeather {
+  display: grid;
+  gap: 0 1em;
+  grid-template-columns: 120px repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+.TodaysWeather dd {
+  display: inline-block;
+  margin-left: 0.25em;
+}
+.TodaysWeather dt {
+  float: left;
+}
+
+.TodaysWeather-description {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.TodaysWeather-dayOfWeek {
+  grid-column: 4;
+  grid-row: 2;
+}
+.TodaysWeather-heading {
+  text-align: right;
+}
+
+.TodaysWeather-heading::first-letter {
+  text-transform: capitalize;
+}
+.TodaysWeather-humidity {
+  grid-row: 2;
+}
+
+.TodaysWeather-icon {
+  grid-row: 1/-1;
+}
+
+.TodaysWeather-icon > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.TodaysWeather-info {
+  grid-column: 4;
+  grid-row: 1;
+  text-align: right;
+}
+
+.TodaysWeather-info > dd {
+  display: block;
+}
+
+.TodaysWeather-temperature {
+  font-size: 2em;
+  font-weight: bold;
+}
+.TodaysWeather-temperature::after {
+  content: "\2103";
+  font-size: 0.45em;
+  vertical-align: super;
+}
+
+.TodaysWeather-wind {
+  grid-row: 3;
+}

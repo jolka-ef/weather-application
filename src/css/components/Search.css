@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0 6em 0;
+}
+.Search {
+  display: flex;
+}
+
+.Search-button {
+  background: #feadb1;
+  border: 2px solid black;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-left-style: none;
+  cursor: pointer;
+  justify-self: end;
+  padding: 0.5em;
+  padding-right: 1.1em;
+}
+
+.Search-button > svg {
+  width: 2.5em;
+}
+
+.Search-input {
+  border: 2px solid black;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-right-style: none;
+  font-size: 1.15em;
+  padding: 0 0.75em;
+  text-align: center;
+  width: 100%;
+}

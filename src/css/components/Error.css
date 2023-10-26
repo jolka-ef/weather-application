@@ -1,0 +1,11 @@
+.Error {
+  display: flex;
+  margin: 0 auto;
+  max-width: 15em;
+}
+
+.Error ~ p {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}

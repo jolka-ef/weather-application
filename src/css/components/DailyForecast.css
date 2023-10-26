@@ -1,0 +1,36 @@
+.DailyForecastList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em 2em;
+  justify-content: space-around;
+  padding: 6em 0;
+}
+
+.DailyForecastList-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em 0;
+  justify-content: space-between;
+}
+
+.DailyForecastList-item svg {
+  width: 2.75em;
+}
+
+.DailyTemperatures {
+  display: flex;
+  font-size: 1.25em;
+  gap: 0.75rem;
+  justify-content: center;
+
+  width: 100%;
+}
+.DailyTemperatures > dd:first-of-type {
+  color: #feadb1;
+}
+.DailyTemperatures > dd::after {
+  content: "\000B0";
+  font-size: 0.65em;
+  vertical-align: super;
+}
